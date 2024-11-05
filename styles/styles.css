@@ -6,7 +6,7 @@
 }
 :root /*Declaración de variables*/
 {
-    --color-fondo: #e1e1e5;
+    --color-fondo: #f0f0f5;
     --color-tarjeta: #f5f5fa;
     --color-header: #0f0c0c;
     --fuente-titulo: 50px;
@@ -35,6 +35,7 @@ h2 {
 body {
     font-family: 'Arial Narrow', Arial, sans-serif;
     font-size: var(--fuente-general);
+    background-color: var(--color-fondo);
 }
 .fullWidth {
     width: 100%;
@@ -65,7 +66,7 @@ body {
 
 /*definir areas de grilla*/
 footer {
-    background-color: gray;
+    background-color: var(--color-header);
     grid-area: footer;
     text-align: center;
 }
@@ -88,21 +89,25 @@ nav ul {
 nav li {
     padding: 0 10px;
 }
-nav ul a {
+a, footer {
     text-decoration: none;
-    color:#e1e1e5;
+    color: var(--color-fondo);
 }
 
 header div {
     width: 100px;
 }
 
+.texto {
+    text-align: center;
+}
 
 .video {
-    background-color: aqua;
+    background-color: var(--color-tarjeta);
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
+    box-shadow: 1px 1px 5px 0px var(--color-header)
 }
 
 .video iframe {
