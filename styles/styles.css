@@ -1,0 +1,197 @@
+/*Mobile First*/ 
+/*Reseteo*/
+* {
+    margin: 0;
+    padding: 0;
+}
+:root /*Declaración de variables*/
+{
+    --color-fondo: #e1e1e5;
+    --color-tarjeta: #f5f5fa;
+    --color-header: #0f0c0c;
+    --fuente-titulo: 50px;
+    --fuente-subtitulo: 24px;
+    --fuente-general: 18px;
+}
+@font-face {
+    font-family: "Bebas Neue";
+    src: url(../fonts/bebasNeue.ttf);
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+h1 {
+    font-family: "Bebas Neue",'Arial Narrow', Arial, sans-serif;
+    font-size: var(--fuente-titulo);
+    text-align: center;
+}
+h2 {
+    font-size: var(--fuente-subtitulo);
+    margin-bottom: 5px;
+}
+body {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: var(--fuente-general);
+}
+.fullWidth {
+    width: 100%;
+}
+.centradoFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.centradoFlexH {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#container 
+{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+                        "header"
+                        "main"
+                        "footer"; 
+    gap: 10px;                 
+}
+
+/*definir areas de grilla*/
+footer {
+    background-color: gray;
+    grid-area: footer;
+    text-align: center;
+}
+
+header 
+{
+    grid-area: header;
+    background-color: var(--color-header);
+}
+
+main {
+    grid-area: main;
+    padding: 5px 20px;
+}
+
+
+nav ul {
+    list-style: none;
+}
+nav li {
+    padding: 0 10px;
+}
+nav ul a {
+    text-decoration: none;
+    color:#e1e1e5;
+}
+
+header div {
+    width: 100px;
+}
+
+
+.video {
+    background-color: aqua;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.video iframe {
+    min-height: 240px;
+    min-width: 300px;
+    aspect-ratio: 16/9;
+    border-style: none;
+    width: 100%;
+}
+
+.logo {
+    width: 100px;
+}
+
+.logosFooter div {
+    width: 60px;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px)
+{
+
+    :root /*Declaración de variables*/
+    {
+        --fuente-titulo: 60px;
+        --fuente-subtitulo: 30px;
+        --fuente-general: 20px;
+    }
+    #container 
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+                            "header header"
+                            "main main"
+                            "footer footer"; 
+        gap: 10px;                 
+    }   
+
+    .centradoFlex 
+    {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-wrap: wrap;
+    }
+
+    .redes {
+        width: 25%;
+    }
+    
+
+}
+
+@media screen and (min-width: 1024px)
+{
+
+    :root /*Declaración de variables*/
+    {
+        --fuente-titulo: 60px;
+        --fuente-subtitulo: 30px;
+        --fuente-general: 20px;
+    }
+    #container 
+    {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+                            "header header header"
+                            "main main main"
+                            "footer footer footer"; 
+        gap: 10px;                 
+    }   
+
+    .centradoFlex 
+    {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-wrap: wrap;
+    }
+
+    .redes {
+        width: 25%;
+    }
+
+    .video {
+        max-width: 1024px;
+    }
+}
