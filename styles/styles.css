@@ -94,6 +94,11 @@ a, footer {
     color: var(--color-fondo);
 }
 
+a:hover {
+    background-color: var(--color-fondo);
+    color: var(--color-header)
+}
+
 header div {
     width: 100px;
 }
