@@ -136,7 +136,7 @@ header div {
 }
 
 .acceso {
-    background-color: #f44336;
+    background-color: #ED2100;
     color: var(--color-fondo);
 }
 @media screen and (min-width: 768px)
