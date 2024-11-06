@@ -132,7 +132,7 @@ header div {
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 1023px)
+@media screen and (min-width: 768px)
 {
 
     :root /*Declaración de variables*/
@@ -165,42 +165,6 @@ header div {
         width: 25%;
     }
     
-
-}
-
-@media screen and (min-width: 1024px)
-{
-
-    :root /*Declaración de variables*/
-    {
-        --fuente-titulo: 60px;
-        --fuente-subtitulo: 30px;
-        --fuente-general: 20px;
-    }
-    #container 
-    {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto auto auto;
-        grid-template-areas:
-                            "header header header"
-                            "main main main"
-                            "footer footer footer"; 
-        gap: 10px;                 
-    }   
-
-    .centradoFlex 
-    {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-end;
-        flex-wrap: wrap;
-    }
-
-    .redes {
-        width: 25%;
-    }
-
     .video {
         max-width: 1024px;
     }
