@@ -194,9 +194,9 @@ header div {
 
     :root /*Declaración de variables*/
     {
-        --fuente-titulo: 70px;
-        --fuente-subtitulo: 50px;
-        --fuente-general: 24px;
+        --fuente-titulo: 56px;
+        --fuente-subtitulo: 32px;
+        --fuente-general: 20px;
     }
     #container 
     {
