@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 :root /*Declaración de variables*/
 {
@@ -51,6 +52,10 @@ body {
 .fullWidth {
     width: 100%;
 }
+.fullHeight {
+    height: 100%;
+}
+
 .centradoFlex {
     display: flex;
     flex-direction: column;
@@ -105,6 +110,7 @@ nav span {
 }
 ul {
     margin: 0;
+    padding: 0;
 }
 a, footer {
     text-decoration: none;
@@ -120,7 +126,6 @@ header div {
 }
 
 .video {
-    background-color: var(--color-tarjeta);
     box-shadow: 1px 1px 5px 0px var(--color-oscuro)
 }
 
@@ -135,6 +140,7 @@ header div {
 
 .logo {
     width: 100px;
+    height: 100px;
 }
 
 .logosFooter div {
@@ -183,7 +189,9 @@ header div {
 .card img {
     box-sizing: border-box;
 }
-
+.tarjeta {
+    background-color: var(--color-tarjeta);
+}
 @media screen and (min-width: 768px)
 {
 
