@@ -13,11 +13,11 @@
             <div class="logo"><img class="fullWidth" src="images/logo-header.png" alt=""></div>
             <nav>
                 <ul class="centradoFlex">
-                    <li><a href="#">Recursos</a> </li>
-                    <li><a href="#">Sobre Nosotros</a> </li>
-                    <li><a href="#">Unirte</a> </li>
-                    <li><a href="#">Novedades</a> </li>
-                    <li><a href="#">Contacto</a> </li>
+                    <li><a class="atajo" href="#">Recursos</a> </li>
+                    <li><a class="atajo" href="#">Sobre Nosotros</a> </li>
+                    <li><a class="atajo" href="#">Unirte</a> </li>
+                    <li><a class="atajo" href="#">Novedades</a> </li>
+                    <li><a class="atajo" href="#">Contacto</a> </li>
                 </ul>   
             </nav>
         </header>
@@ -32,21 +32,29 @@
                 </div>
             </section>
             <section class="centradoFlexH">
-                <article class="video fullWidth">
-                        <h3>El mejor discurso que jamás escucharás</h3>
-                        <p class="separarArriba">Un discurso inspirador y que cambia la vida, dado en la Universidad de Georgia Tech en 2010 por Gary Yourofsky, activista por la liberación animal, orador internacional sobre los derechos de los animales y veganismo, y fundador de ADAPTT.</p>
+                <article class="video margin10 bordeRedondoAbajo bordeRedondoArriba">
+                        <div class="tituloVideo bordeRedondoArriba padding10">
+                            <h3>El mejor discurso que jamás escucharás</h3>
+                        </div>
+                        <p class="margin10">Un discurso inspirador y que cambia la vida, dado en la Universidad de Georgia Tech en 2010 por Gary Yourofsky, activista por la liberación animal, orador internacional sobre los derechos de los animales y veganismo, y fundador de ADAPTT.</p>
                         <div class="centradoFlexH separarArriba"> 
                             <iframe class="fullWidth" src="https://drive.google.com/file/d/1nvZnSXEsX4hnCWjZAylWkIfn8frKgSDI/preview"></iframe>
                         </div>
-                        <p class="separarArriba acceso">Si el video carga muy lento, podés <a target="_blank" href="https://www.youtube.com/watch?v=ZzvK5uLu7F0">verlo en YouTube.</a></p>
-                </article>
-                <article class="video fullWidth">
-                        <h3>Dominion</h3>
-                        <p class="separarArriba">Dominion utiliza drones, cámaras ocultas y portátiles para exponer el lado oscuro de la agricultura moderna, cuestionando la moralidad y validez del dominio humano sobre el reino animal.</p>
-                        <div class="centradoFlexH separarArriba">
-                            <iframe class="fullWidth" src="https://drive.google.com/file/d/13TDbCV-a7uYNGcYIQDj39Q1OkP_hGr_1/preview"></iframe>
+                        <div class="acceso bordeRedondoAbajo padding10">
+                            <p>Si el video carga muy lento, podés <a  class="atajo" target="_blank" href="https://www.youtube.com/watch?v=ZzvK5uLu7F0">verlo en YouTube.</a></p>
                         </div>
-                        <p class="separarArriba acceso">Si el video carga muy lento, podés <a target="_blank" href="https://www.youtube.com/watch?v=TSmcFL0pGCQ&list=PL2pIocn3-nwWNIJx7AAiqqjrh3Bztv3JI">verlo en YouTube.</a></p>
+                    </article>
+                <article class="video margin10 bordeRedondoAbajo bordeRedondoArriba">
+                    <div class="tituloVideo bordeRedondoArriba padding10">
+                        <h3>Dominion</h3>
+                    </div>    
+                    <p class="margin10">Dominion utiliza drones, cámaras ocultas y portátiles para exponer el lado oscuro de la agricultura moderna, cuestionando la moralidad y validez del dominio humano sobre el reino animal.</p>
+                    <div class="centradoFlexH separarArriba">
+                        <iframe class="fullWidth" src="https://drive.google.com/file/d/13TDbCV-a7uYNGcYIQDj39Q1OkP_hGr_1/preview"></iframe>
+                    </div>
+                    <div class="acceso bordeRedondoAbajo padding10">
+                        <p>Si el video carga muy lento, podés <a  class="atajo" target="_blank" href="https://www.youtube.com/watch?v=TSmcFL0pGCQ&list=PL2pIocn3-nwWNIJx7AAiqqjrh3Bztv3JI">verlo en YouTube.</a></p>
+                    </div>
                 </article>
             <section class="texto">
                 <q class="info separarArriba" cite="https://filosofiavegana.blogspot.com/2009/11/veganismo-definido.html">La palabra veganismo significará la doctrina de que el hombre debe vivir sin explotar a los animales.</q>
@@ -54,7 +62,7 @@
             </section>
         </main>
 
-        <footer class="centradoFlex">
+        <footer id="pie" class="centradoFlex">
             <div class="redes fullWidth separarArriba">
                 <p>Redes Sociales - Español</p>
                 <div class="logosFooter centradoFlexH">
@@ -73,7 +81,9 @@
             <div class="logo separarArriba"> 
                 <img class="fullWidth" src="images/simbolo-footer.png">
             </div>
-            <a href="#container" class="separarArriba">Volver arriba</a>
+            <div class="redes">
+                <a href="#container" class="separarArriba atajo">Volver arriba</a>
+            </div>
             <address class="fullWidth separarArriba">Buenos Aires, Argentina</address>
         </footer>
     </div>

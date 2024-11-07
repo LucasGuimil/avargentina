@@ -8,7 +8,8 @@
 {
     --color-fondo: #f0f0f5;
     --color-tarjeta: #f5f5fa;
-    --color-header: #0f0c0c;
+    --color-oscuro: #0f0c0c;
+    --color-terciario: #ED2100;
     --fuente-titulo: 50px;
     --fuente-subtitulo: 24px;
     --fuente-general: 18px;
@@ -30,6 +31,7 @@ h1 {
 }
 h2 {
     font-size: var(--fuente-subtitulo);
+    font-family: "Roboto",'Arial Narrow', Arial, sans-serif;
     margin-bottom: 5px;
 }
 body {
@@ -66,7 +68,7 @@ body {
 
 /*definir areas de grilla*/
 footer {
-    background-color: var(--color-header);
+    background-color: var(--color-oscuro);
     grid-area: footer;
     text-align: center;
 }
@@ -74,7 +76,7 @@ footer {
 header 
 {
     grid-area: header;
-    background-color: var(--color-header);
+    background-color: var(--color-oscuro);
 }
 
 main {
@@ -94,11 +96,6 @@ a, footer {
     color: var(--color-fondo);
 }
 
-a:hover {
-    background-color: var(--color-fondo);
-    color: var(--color-header)
-}
-
 header div {
     width: 100px;
 }
@@ -109,10 +106,7 @@ header div {
 
 .video {
     background-color: var(--color-tarjeta);
-    padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
-    box-shadow: 1px 1px 5px 0px var(--color-header)
+    box-shadow: 1px 1px 5px 0px var(--color-oscuro)
 }
 
 .video iframe {
@@ -121,6 +115,7 @@ header div {
     aspect-ratio: 16/9;
     border-style: none;
     width: 100%;
+    box-sizing: content-box;
 }
 
 .logo {
@@ -136,16 +131,47 @@ header div {
 }
 
 .acceso {
-    background-color: #ED2100;
+    background-color: var(--color-terciario);
     color: var(--color-fondo);
 }
+
+.atajo:hover{
+    background-color: var(--color-fondo);
+    color: var(--color-oscuro);
+    padding: 1px;
+    border-radius: 3px;
+}
+
+.tituloVideo {
+    background-color: #101014;
+    color: var(--color-tarjeta);
+}
+
+.margin10 {
+    margin: 10px;
+}
+
+.padding10 {
+    padding: 10px;
+}
+
+.bordeRedondoArriba {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.bordeRedondoAbajo {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
 @media screen and (min-width: 768px)
 {
 
     :root /*Declaración de variables*/
     {
-        --fuente-titulo: 60px;
-        --fuente-subtitulo: 30px;
+        --fuente-titulo: 70px;
+        --fuente-subtitulo: 32px;
         --fuente-general: 20px;
     }
     #container 
@@ -174,5 +200,9 @@ header div {
     
     .video {
         max-width: 1024px;
+    }
+
+    #pie {
+        align-items: center;
     }
 }
