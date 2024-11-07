@@ -53,6 +53,7 @@ body {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
 }
 #container 
 {
@@ -91,6 +92,10 @@ nav ul {
 nav li {
     padding: 0 10px;
 }
+nav span {
+    display: none   ;
+}
+
 a, footer {
     text-decoration: none;
     color: var(--color-fondo);
@@ -204,5 +209,12 @@ header div {
 
     #pie {
         align-items: center;
+    }
+
+    nav span {
+        display:initial;
+    }
+    nav img {
+        display: none;
     }
 }
