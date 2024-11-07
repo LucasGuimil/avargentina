@@ -51,6 +51,10 @@ body {
 .fullWidth {
     width: 100%;
 }
+.fullHeight {
+    height: 100%;
+}
+
 .centradoFlex {
     display: flex;
     flex-direction: column;
