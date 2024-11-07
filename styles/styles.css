@@ -125,12 +125,7 @@ header div {
 .texto {
     text-align: center;
 }
-
-.video {
-    box-shadow: 1px 1px 5px 0px var(--color-oscuro)
-}
-
-.video iframe {
+.tarjeta iframe {
     min-height: 240px;
     min-width: 300px;
     aspect-ratio: 16/9;
@@ -192,6 +187,7 @@ header div {
 }
 .tarjeta {
     background-color: var(--color-tarjeta);
+    box-shadow: 1px 1px 5px 0px var(--color-oscuro);
 }
 @media screen and (min-width: 768px)
 {
