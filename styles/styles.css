@@ -28,6 +28,7 @@ h1 {
     font-family: "Bebas Neue",'Arial Narrow', Arial, sans-serif;
     font-size: var(--fuente-titulo);
     text-align: center;
+    color: var(--color-oscuro)
 }
 h2 {
     font-size: var(--fuente-subtitulo);
