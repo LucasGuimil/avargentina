@@ -187,7 +187,7 @@ header div {
 }
 .tarjeta {
     background-color: var(--color-tarjeta);
-    box-shadow: 1px 1px 5px 0px var(--color-oscuro);
+    box-shadow: 2px 2px 7px 2px gray;
 }
 @media screen and (min-width: 768px)
 {
