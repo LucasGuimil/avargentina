@@ -55,7 +55,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
 }
-#container 
+.grilla 
 {
     display: grid;
     grid-template-columns: 100%;
@@ -63,8 +63,7 @@ body {
     grid-template-areas:
                         "header"
                         "main"
-                        "footer"; 
-    gap: 10px;                 
+                        "footer";          
 }
 
 /*definir areas de grilla*/
