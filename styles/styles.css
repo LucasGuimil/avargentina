@@ -23,22 +23,30 @@
     font-family: "Roboto";
     src: url(../fonts/Roboto-Regular.ttf);
 }
-
-h1 {
+.fuentePrincipal 
+{
     font-family: "Bebas Neue",'Arial Narrow', Arial, sans-serif;
+    color: var(--color-oscuro);
+    font-weight: bold;
+}
+h1 {
     font-size: var(--fuente-titulo);
     text-align: center;
-    color: var(--color-oscuro)
+
 }
 h2 {
     font-size: var(--fuente-subtitulo);
-    font-family: "Roboto",'Arial Narrow', Arial, sans-serif;
     margin-bottom: 5px;
+}
+
+h3 {
+    font-family: "Roboto",'Arial Narrow', Arial, sans-serif;
 }
 body {
     font-family: 'Arial Narrow', Arial, sans-serif;
     font-size: var(--fuente-general);
     background-color: var(--color-fondo);
+    color: var(--color-oscuro);
 }
 .fullWidth {
     width: 100%;
@@ -95,7 +103,9 @@ nav li {
 nav span {
     display: none   ;
 }
-
+ul {
+    margin: 0;
+}
 a, footer {
     text-decoration: none;
     color: var(--color-fondo);
@@ -168,6 +178,10 @@ header div {
 .bordeRedondoAbajo {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+}
+
+.card img {
+    box-sizing: border-box;
 }
 
 @media screen and (min-width: 768px)
