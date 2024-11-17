@@ -9,83 +9,96 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <div id="inicio" class="grilla">
-        <header class="centradoFlex">
-            <div class="logo"><img class="fullHeight" src="images/logo-header.png" alt=""></div>
-            <nav class="margin10">
-                <ul class="centradoFlexH">
-                    <li><a href="index.html"><img src="icons/homeIcon.svg" title="Recursos - Inicio"><span class="atajo" >Recursos</span></a></li>
-                    <li><a href="pages/sobreNosotros.html"><img src="icons/sobreNosotrosIcon.svg" title="Sobre nosotros"><span class="atajo" >Sobre Nosotros</a></span></li>
-                    <li><a href="#"><img src="icons/unirteIcon.svg" title="Unirte"><span class="atajo" >Unirte</span></a></li>
-                    <li><a href="#"><img src="icons/novedadesIcon.svg" title="Novedades"><span class="atajo" >Novedades</span></a> </li>
-                    <li><a href="#"><img src="icons/contactoIcon.svg" title="Contacto"><span class="atajo" >Contacto</span></a> </li>
-                </ul>   
+    <div id="inicio">
+        <header class="container-fluid">
+            <nav class="navbar navbar-expand-lg d-lg-flex justify-content-between">
+                <div class="container-fluid d-lg-flex justify-content-between">
+                    <div class="navbar-brand"><img src="images/logo-header-2.png" alt="">
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class=""><img src="icons/menuIcon.svg" alt=""></span>
+                    </button>
+                    <div class="collapse navbar-collapse d-lg-flex justify-content-end align-items-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="index.html"><img src="icons/homeIcon.svg" title="Recursos - Inicio"><span class="atajo">Recursos</span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="pages/sobreNosotros.html"><img src="icons/sobreNosotrosIcon.svg" title="Sobre nosotros"><span class="atajo">Nosotros</a></span></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><img src="icons/unirteIcon.svg" title="Unirte"><span class="atajo" >Unirte</span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><img src="icons/novedadesIcon.svg" title="Novedades"><span class="atajo" >Novedades</span></a> </li>
+                            <li class="nav-item"><a class="nav-link" href="#"><img src="icons/contactoIcon.svg" title="Contacto"><span class="atajo" >Contacto</span></a> </li>
+                        </ul>
+                    </div>
+                </div>   
             </nav>
         </header>
+    </div>
 
-        <main class="centradoFlexH">
+        <main class="container-lg">
             <section>
                 <div>
-                    <h1 class="titulo fuentePrincipal">Videos Esenciales</h1>
+                    <h1 class="titulo fuentePrincipal mt-3">Videos Esenciales</h1>
                     <h2 class="subtitulo fuentePrincipal">¿Por qué ser veganos?</h2>
-                    <p class="separarArriba">El veganismo es una postura ética que rechaza cualquier forma de explotación de los animales, incluyendo su uso para la alimentación, entretenimiento, deportes, experimentación, vestimenta, etc. Por lo tanto, el hecho de no ser veganos significa estar a favor del abuso, la tortura y el asesinato de los animales, seres sintientes que no hicieron nada para merecer todo lo que el ser humano les hace padecer solo por ser de una especie diferente.</p>
+                    <p class="mt-3">El veganismo es una postura ética que rechaza cualquier forma de explotación de los animales, incluyendo su uso para la alimentación, entretenimiento, deportes, experimentación, vestimenta, etc. Por lo tanto, el hecho de no ser veganos significa estar a favor del abuso, la tortura y el asesinato de los animales, seres sintientes que no hicieron nada para merecer todo lo que el ser humano les hace padecer solo por ser de una especie diferente.</p>
                     <p>A continuación te dejamos dos videos que explican en profundidad esto mismo.</p>
                 </div>
             </section>
-            <section class="centradoFlexH">
-                <article class="video margin10 bordeRedondoAbajo bordeRedondoArriba tarjeta">
-                        <div class="tituloVideo bordeRedondoArriba padding10">
-                            <h3>El mejor discurso que jamás escucharás</h3>
-                        </div>
-                        <p class="margin10">Un discurso inspirador y que cambia la vida, dado en la Universidad de Georgia Tech en 2010 por Gary Yourofsky, activista por la liberación animal, orador internacional sobre los derechos de los animales y veganismo, y fundador de ADAPTT.</p>
-                        <div class="centradoFlexH separarArriba"> 
-                            <iframe class="fullWidth" src="https://drive.google.com/file/d/1nvZnSXEsX4hnCWjZAylWkIfn8frKgSDI/preview"></iframe>
-                        </div>
-                        <div class="acceso bordeRedondoAbajo padding10">
-                            <p>Si el video carga muy lento, podés <a  class="atajo" target="_blank" href="https://www.youtube.com/watch?v=ZzvK5uLu7F0">verlo en YouTube.</a></p>
-                        </div>
-                    </article>
-                <article class="video margin10 bordeRedondoAbajo bordeRedondoArriba tarjeta">
-                    <div class="tituloVideo bordeRedondoArriba padding10">
-                        <h3>Dominion</h3>
-                    </div>    
-                    <p class="margin10">Dominion utiliza drones, cámaras ocultas y portátiles para exponer el lado oscuro de la agricultura moderna, cuestionando la moralidad y validez del dominio humano sobre el reino animal.</p>
-                    <div class="centradoFlexH separarArriba">
-                        <iframe class="fullWidth" src="https://drive.google.com/file/d/13TDbCV-a7uYNGcYIQDj39Q1OkP_hGr_1/preview"></iframe>
+            <section class="container-fluid">
+                <article class="card tarjeta mb-5">
+                    <div class="card-header tituloVideo">
+                        <h3 class="card-title">El mejor discurso que jamás escucharás</h3>
                     </div>
-                    <div class="acceso bordeRedondoAbajo padding10">
+                    <div class="card-body">
+                        <p class="card-text">Un discurso inspirador y que cambia la vida, dado en la Universidad de Georgia Tech en 2010 por Gary Yourofsky, activista por la liberación animal, orador internacional sobre los derechos de los animales y veganismo, y fundador de ADAPTT.</p>
+                    </div>
+                    <iframe class="w-100" src="https://drive.google.com/file/d/1nvZnSXEsX4hnCWjZAylWkIfn8frKgSDI/preview" allow="autoplay">
+                    </iframe>
+                    <div class="acceso card-footer">
+                        <p>Si el video carga muy lento, podés <a  class="atajo" target="_blank" href="https://www.youtube.com/watch?v=ZzvK5uLu7F0">verlo en YouTube.</a></p>
+                    </div>
+                </article>
+                <article class="card tarjeta mb-5">
+                    <div class="card-header tituloVideo">
+                        <h3 class="card-title">Dominion</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Dominion utiliza drones, cámaras ocultas y portátiles para exponer el lado oscuro de la agricultura moderna, cuestionando la moralidad y validez del dominio humano sobre el reino animal.</p>
+                    </div>
+                    <iframe class="w-100" src="https://drive.google.com/file/d/13TDbCV-a7uYNGcYIQDj39Q1OkP_hGr_1/preview" allow="autoplay">
+                    </iframe>
+                    <div class="acceso card-footer">
                         <p>Si el video carga muy lento, podés <a  class="atajo" target="_blank" href="https://www.youtube.com/watch?v=TSmcFL0pGCQ&list=PL2pIocn3-nwWNIJx7AAiqqjrh3Bztv3JI">verlo en YouTube.</a></p>
                     </div>
                 </article>
             <section class="texto">
-                <q class="info separarArriba" cite="https://filosofiavegana.blogspot.com/2009/11/veganismo-definido.html">La palabra veganismo significará la doctrina de que el hombre debe vivir sin explotar a los animales.</q>
+                <q class="info" cite="https://filosofiavegana.blogspot.com/2009/11/veganismo-definido.html">La palabra veganismo significará la doctrina de que el hombre debe vivir sin explotar a los animales.</q>
                 <p><strong>Leslie Cros, 1951.</strong></p>
             </section>
         </main>
 
-        <footer id="pie" class="centradoFlex">
-            <div class="redes fullWidth separarArriba">
-                <p>Redes Sociales - Español</p>
-                <div class="logosFooter centradoFlexH">
-                    <div><a href="https://www.instagram.com/av.espanol/" target="_blank"><img class="fullWidth" src="icons/instagram-logo.png" alt=""></a></div>
-                    <div><a href="https://www.facebook.com/latinoamerica.av" target="_blank"><img class="fullWidth" src="icons/facebook-logo.png" alt=""></a></div>
+        <footer id="pie" class="container-fluid">
+            <div class="row justify-content-center align-items-center py-3">
+                <div class="col-lg-3 mb-3">
+                    <p>Redes Sociales - Español</p>
+                    <div class="logosFooter row justify-content-center">
+                        <div class="col-auto"><a href="https://www.instagram.com/av.espanol/" target="_blank"><img class="w-100" src="icons/instagram-logo.png" alt=""></a></div>
+                        <div class="col-auto"><a href="https://www.facebook.com/latinoamerica.av" target="_blank"><img class="w-100" src="icons/facebook-logo.png" alt=""></a></div>
+                    </div>
                 </div>
-            </div>
-            <div class="redes fullWidth separarArriba">
-                <p>Redes Sociales - Inglés</p>
-                <div class="logosFooter centradoFlexH">
-                    <div><a href="https://www.instagram.com/anonymousforthevoiceless/" target="_blank"><img class="fullWidth" src="icons/instagram-logo.png" alt=""></a></div>
-                    <div><a href="https://www.facebook.com/anonymousforthevoiceless" target="_blank"><img class="fullWidth" src="icons/facebook-logo.png" alt=""></a></div>
-                    <div><a href="https://www.youtube.com/@AnonymousfortheVoiceless" target="_blank""><img class="fullWidth" src="icons/logoYoutube.png" alt=""></a></div>
+                <div class="col-lg-3 mb-3">
+                    <p>Redes Sociales - Inglés</p>
+                    <div class="logosFooter row justify-content-center">
+                        <div class="col-auto"><a href="https://www.instagram.com/anonymousforthevoiceless/" target="_blank"><img class="w-100" src="icons/instagram-logo.png" alt=""></a></div>
+                        <div class="col-auto"><a href="https://www.facebook.com/anonymousforthevoiceless" target="_blank"><img class="w-100" src="icons/facebook-logo.png" alt=""></a></div>
+                        <div class="col-auto"><a href="https://www.youtube.com/@AnonymousfortheVoiceless" target="_blank"><img class="w-100" src="icons/logoYoutube.png" alt=""></a></div>
+                    </div>
                 </div>
-            </div>
-            <div class="logo separarArriba"> 
-                <img class="fullHeight" src="images/simbolo-footer.png">
-            </div>
-            <div class="redes">
-                <a href="#inicio" class="separarArriba atajo">Volver arriba</a>
-            </div>
-            <address class="fullWidth separarArriba">Buenos Aires, Argentina</address>
+                <div class="col-lg-3 mb-3"> 
+                    <img class="tamanoLogo" src="images/simbolo-footer.png">
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <a href="#inicio" class="atajo">Volver arriba</a>
+                </div>
+                <address class="mb-0">Buenos Aires, Argentina</address>
+            </div>    
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
