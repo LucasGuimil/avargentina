@@ -1,0 +1,32 @@
+
+header 
+{   
+    background-color: $color-oscuro;
+    font-size: $fuente-subtitulo;
+    font-family: "Bebas Neue";
+    ul {
+        list-style: none;
+        a {
+            text-decoration: none;
+            font-size: $fuente-subtitulo;
+            &:hover, &:active
+            {
+                background-color: $color-fondo;
+                border-radius: 3px;
+                img {
+                    filter: invert(100%);}
+
+                span {
+                color: $color-oscuro;
+                };
+            }
+        span{
+            color: $color-fondo;
+        }
+        }
+    }
+}
+
+
+
+
