@@ -13,12 +13,12 @@ $color-fondo: #f0f0f5;
 $color-tarjeta: #f5f5fa;
 $color-oscuro: #0f0c0c;
 $color-rojo: #ED2100;
-$fuente-titulo: 48px;
+$fuente-titulo: 50px;
 $fuente-subtitulo: 28px;
 $fuente-general: 18px;  
 
-@mixin media() {
-    @media (min-width: 768px) {
-        @content
-    }
-    }
+
+@mixin colores($fondo, $texto) {
+    background-color: $fondo;
+    color: $texto;
+}

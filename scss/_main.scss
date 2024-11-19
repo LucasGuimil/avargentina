@@ -1,0 +1,52 @@
+body 
+{
+    @include colores($color-fondo,$color-oscuro);
+    font-family: "Roboto",'Arial Narrow', Arial, sans-serif;
+    font-size: $fuente-general;
+    h1 {
+        font-family: "Bebas Neue";
+        font-size: $fuente-titulo;
+        font-weight: bold;
+        text-align: center;
+    }
+    h2 {
+        @extend h1;
+        font-size: $fuente-subtitulo;
+    }
+    h3 {
+        font-size: $fuente-general  ;
+    }
+}
+
+.card
+{
+    background-color: $color-tarjeta;
+    box-shadow: 1px 1px 5px 1px gray;
+    transition: box-shadow, scale;
+    transition-duration: 1s;
+    &:hover,&:focus{
+        box-shadow: 2px 2px 10px 2px gray;
+        scale: 1.01;
+    }
+    .card-header {
+        @include colores($color-oscuro,$color-fondo);
+    }
+    .card-footer {
+        @include colores($color-rojo,$color-fondo); 
+        a {
+            text-decoration: none;
+            color: $color-fondo;
+            &:hover,&:active,&:focus {
+                @include colores($color-fondo, $color-rojo);
+                border-radius: 3px;
+            }
+        }
+    }
+    iframe {
+        min-height: 240px;
+        min-width: 300px;
+        aspect-ratio: 16/9;
+        border-style: none;
+    }
+
+}
