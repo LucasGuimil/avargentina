@@ -1,149 +1,111 @@
-/*Mobile First*/ 
-/*Reseteo*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-:root /*Declaración de variables*/
-{
-    --color-fondo: #f0f0f5;
-    --color-tarjeta: #f5f5fa;
-    --color-oscuro: #0f0c0c;
-    --color-terciario: #ED2100;
-    --fuente-titulo: 50px;
-    --fuente-subtitulo: 30px;
-    --fuente-general: 18px;
+@font-face {
+  font-family: "Bebas Neue";
+  src: url(../fonts/bebasNeue.ttf);
+  font-weight: bold;
 }
 @font-face {
-    font-family: "Bebas Neue";
-    src: url(../fonts/bebasNeue.ttf);
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+header {
+  background-color: #0f0c0c;
+  color: #f0f0f5;
+  font-size: 28px;
+  font-family: "Bebas Neue";
+}
+header ul {
+  list-style: none;
+}
+header ul a {
+  text-decoration: none;
+  font-size: 28px;
+}
+header ul a:hover, header ul a:active, header ul a:focus {
+  background-color: #f0f0f5;
+  border-radius: 3px;
+}
+header ul a:hover img, header ul a:active img, header ul a:focus img {
+  filter: invert(100%);
+}
+header ul a:hover span, header ul a:active span, header ul a:focus span {
+  color: #0f0c0c;
+}
+header ul a span {
+  color: #f0f0f5;
 }
 
-@font-face {
-    font-family: "Roboto";
-    src: url(../fonts/Roboto-Regular.ttf);
-}
-.fuentePrincipal 
-{
-    font-family: "Bebas Neue",'Arial Narrow', Arial, sans-serif;
-    color: var(--color-oscuro);
-    font-weight: bold;
-}
-
-h1 {
-    font-size: var(--fuente-titulo);
-    text-align: center;
-
-}
-h2 {
-    font-size: var(--fuente-subtitulo);
-    margin-bottom: 5px;
-}
-
-h3 {
-    font-family: "Roboto",'Arial Narrow', Arial, sans-serif;
-    font-size: var(--fuente-general)
-}
 body {
-    font-family: 'Arial Narrow', Arial, sans-serif;
-    font-size: var(--fuente-general);
-    background-color: var(--color-fondo);
-    color: var(--color-oscuro);
+  background-color: #f0f0f5;
+  color: #0f0c0c;
+  font-family: "Roboto", "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
+}
+body h1, body h2 {
+  font-family: "Bebas Neue";
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+body h2 {
+  font-size: 28px;
+}
+body h3 {
+  font-size: 18px;
+}
+
+.card {
+  background-color: #f5f5fa;
+  box-shadow: 1px 1px 5px 1px gray;
+  transition: box-shadow, scale;
+  transition-duration: 1s;
+}
+.card:hover, .card:focus {
+  box-shadow: 2px 2px 10px 2px gray;
+  scale: 1.01;
+}
+.card .card-header {
+  background-color: #0f0c0c;
+  color: #f0f0f5;
+}
+.card .card-footer {
+  background-color: #ED2100;
+  color: #f0f0f5;
+}
+.card .card-footer a {
+  text-decoration: none;
+  color: #f0f0f5;
+}
+.card .card-footer a:hover, .card .card-footer a:active, .card .card-footer a:focus {
+  background-color: #f0f0f5;
+  color: #ED2100;
+  border-radius: 3px;
+}
+.card iframe {
+  min-height: 240px;
+  min-width: 300px;
+  aspect-ratio: 16/9;
+  border-style: none;
 }
 
 footer {
-    background-color: var(--color-oscuro);
-    text-align: center;
-    margin-bottom: 0px;
+  background-color: #0f0c0c;
+  color: #f0f0f5;
+  text-align: center;
+}
+footer .tamanoLogo {
+  height: 100px;
+}
+footer .logosFooter div {
+  width: 60px;
+}
+footer .atajo {
+  text-decoration: none;
+  background-color: #0f0c0c;
+  color: #f0f0f5;
+}
+footer .atajo:hover, footer .atajo:active, footer .atajo:focus {
+  filter: invert(100%);
+  border-radius: 3px;
 }
 
-
-header 
-{
-    background-color: var(--color-oscuro);
-}
-
-main {
-    padding: 5px 20px;
-}
-
-
-nav ul {
-    list-style: none;
-}
-nav li {
-    padding: 0 10px;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-a, footer {
-    text-decoration: none;
-    color: var(--color-fondo);
-}
-
-header div {
-    width: 100px;
-}
-
-.texto {
-    text-align: center;
-}
-.tarjeta iframe {
-    min-height: 240px;
-    min-width: 300px;
-    aspect-ratio: 16/9;
-    border-style: none;
-    width: 100%;
-    box-sizing: content-box;
-}
-
-.tamanoLogo {
-    height: 100px;
-}
-.logosFooter div {
-    width: 60px;
-}
-
-.acceso {
-    background-color: var(--color-terciario);
-    color: var(--color-fondo);  
-}
-.atajo {
-    color: var(--color-fondo);
-}
-.atajo:hover{
-    background-color: var(--color-fondo);
-    color: var(--color-oscuro);
-    padding: 1px;
-    border-radius: 3px;
-}
-
-
-.tituloVideo {
-    background-color: #101014;
-    color: var(--color-tarjeta);
-}
-
-.card img {
-    box-sizing: border-box;
-}
-.tarjeta {
-    background-color: var(--color-tarjeta);
-    box-shadow: 2px 2px 7px 2px gray;
-}
-@media screen and (min-width: 768px)
-{
-
-    :root /*Declaración de variables*/
-    {
-        --fuente-titulo: 56px;
-        --fuente-subtitulo: 32px;
-        --fuente-general: 20px;
-    }
-
-}
+/*# sourceMappingURL=styles.css.map */
