@@ -16,4 +16,10 @@ footer {
         }
         
     }
+    img {
+        transition: scale 0.5s;
+        &:hover, &:active, &:focus{
+            scale: 1.2;
+        }
+    }
 }
