@@ -88,6 +88,13 @@ body h3 {
   border-style: none;
 }
 
+.icono {
+  transition: scale 0.5s;
+}
+.icono:hover, .icono:active, .icono:focus {
+  scale: 1.05;
+}
+
 .btn-dark {
   background-color: #0f0c0c;
   color: #f0f0f5;

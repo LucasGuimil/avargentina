@@ -51,6 +51,12 @@ body
     }
 
 }
+.icono {
+    transition: scale 0.5s;
+    &:hover, &:active, &:focus{
+        scale: 1.05;
+    }
+}
 .btn-dark {
     @include colores($color-oscuro,$color-fondo);
 }
