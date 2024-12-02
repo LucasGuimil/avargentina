@@ -14,7 +14,8 @@ body
         font-size: $fuente-subtitulo;
     }
     h3 {
-        font-size: $fuente-general  ;
+        font-size: $fuente-general;
+        font-weight: 600;
     }
 }
 
@@ -49,4 +50,7 @@ body
         border-style: none;
     }
 
+}
+.btn-dark {
+    @include colores($color-oscuro,$color-fondo);
 }
