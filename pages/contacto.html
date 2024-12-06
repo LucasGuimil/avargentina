@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unirte - AV Argentina</title>
+    <title>Contáctanos - AV Argentina</title>
     <link rel="icon" href="../icons/logo-header.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../styles/styles.css">
-    <meta name="description" content="Si ya sos vegano podés unirte la organización Anonymous for the Voiceless para defender a los animales.">
-    <meta name="keywords" content="vegan,veganismo,activismo,derechos,animales,especismo,supremacía,buenosaires">
+    <meta name="description" content="Si querés más información o tenes preguntas sobre la organización, podés contactarnos a través de un formulario.">
+    <meta name="keywords" content="vegan,veganismo,activismo,derechos,animales,especismo,supremacía,buenosaires,argentina">
 </head>
 <body>
     <div id="inicio">
@@ -35,43 +35,73 @@
     </div>
     <main class="container-lg">
         <section class="mb-3">
-            <h1 class="mt-3">¿Estás listo para unirte?</h1>
-            <p>Si ya sos vegano y estás listo para sumarte a la lucha por la liberación animal, podés buscar en el mapa el capítulo más cercano a tu ciudad.
-            Los animales te necesitan, la liberación animal del mañana depende del activismo que hagamos hoy.</p>
-            <div class="card col-10 mx-auto">
-                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=14AKCfCxRcW2EZXrjOUuAjbGciP7vePM&ehbc=2E312F&noprof=1"></iframe>
-            </div>
-        </section>
-        <section class="mt-5">
-            <h2>Capítulos activos en Buenos Aires</h2>
-            <p>Aquí están los capítulos que se encuentran activos en Buenos Aires. Al seleccionar el icono, te llevará al perfil de Instagram donde podés enterarte de los próximos activismos, ver sus publicaciones y escribir directamente a los organizadores para sumarte.</p>
-            <article class="d-inline-flex flex-wrap justify-content-center align-items-center">
-                <div class="m-1">
-                    <a target="_blank" alt="perfíl de AV Ciudad de Buenos Aires" href="https://www.instagram.com/av.ciudadbuenosaires/"><img class ="card rounded-circle icono"src="../images/ciudadBuenosAires.png" alt="Icono de ubicación de Ciudad Buenos Aires y acceso a perfil de Instagram"></a>
+            <h1 class="mt-3">Contáctanos</h1>
+            <p>Si tenés alguna duda sobre cómo sumarte, ser organizador de un nuevo capítulo o querés saber más sobre la organización, podés llenar el siguiente formulario y nos pondremos en contacto con vos.</p>
+        </section class="mt-3">
+        <section>
+            <form>
+                <div class="row cols-2">
+                    <div class="col-md-6">
+                        <label for="nombre" class="form-label">Nombre: </label>
+                        <input id="nombre" class="form-control" type="text" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="apellido" class="form-label">Apellido: </label>
+                        <input id="apellido" class="form-control" type="text" required>
+                    </div>
                 </div>
-                <div class="m-1">
-                    <a target="_blank" alt="perfíl de AV La Plata" href="https://www.instagram.com/av.laplata/"><img class ="card rounded-circle icono" src="../images/laPlata.png" alt="Icono de ubicación de La Plata y acceso a perfil de Instagram"></a>
+                <div class="row mt-2">
+                    <div class="col-12">
+                        <label for="email" class="form-label">Email</label>
+                        <input id="email" class="form-control" type="email" required>
+                    </div>
                 </div>
-                <div class="m-1">
-                    <a target="_blank" alt="perfíl de AV San Justo" href="https://www.instagram.com/av.sanjusto/"><img class ="card rounded-circle icono "src="../images/sanJusto.png" alt="Icono de ubicación de San Justo y acceso a perfil de Instagram"></a>
+                <fieldset class="row mt-2">
+                    <legend class="col-form-label">¿Sos vegano/a?</legend>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input id="si" class="form-check-input" type="radio" name="vegano" value="1">
+                                <label for="si" class="form-check-label">Si</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input id="no" class="form-check-input" type="radio" name="vegano" value="2">
+                                <label for="no" class="form-check-label">No</label>
+                            </div>
+                        </div>
+                </fieldset>
+                <fieldset class="row mt-2">
+                    <legend class="col-form-label">Motivo de contacto:</legend>
+                    <div class="col-12">
+                        <select class="form-select">
+                            <option selected>Seleccionar un motivo...</option>
+                            <option value="1">Crear un nuevo capítulo en mi ciudad</option>
+                            <option value="2">Quiero ser co-organizador de un capítulo existente</option>
+                            <option value="3">Otros</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <div class="row mt-2">
+                    <div class="col-12">
+                        <label for="mensaje" class="form-label">Mensaje: </label>
+                        <textarea id="mensaje" class="form-control" required rows="10" placeholder="Escribinos tu consulta aquí..."></textarea>
+                    </div>
                 </div>
-                <div class="m-1">
-                    <a target="_blank" alt="perfíl de AV San Miguel" href="https://www.instagram.com/av.sanmiguel/"><img class ="card rounded-circle icono"src="../images/sanMiguel.png" alt="Icono de ubicación de San Miguel y acceso a perfil de Instagram"></a>
+                <div class="mt-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="acepto">
+                    <label class="form-check-label" for="acepto" required>Acepto recibir información a través del correo electrónico declarado.</label>
                 </div>
-                <div class="m-1">
-                    <a target="_blank" alt="perfíl de AV Gral. San Martín" href="https://www.instagram.com/av.gsm/"><img class ="card rounded-circle icono"src="../images/gralSanMartin.png" alt="Icono de ubicación de Gral. San Martín y acceso a perfil de Instagram"></a>
+                <div class="row justify-content-center justify-content-sm-start">
+                    <div class="col-auto">
+                        <button class="btn btn-dark my-3" type="submit">Enviar</button>
+                    </div>
                 </div>
-                <div class="m-1">
-                    <a target="_blank" alt="perfíl de AV Tigre" href="https://www.instagram.com/av.tigre/"><img class ="card rounded-circle icono "src="../images/tigre.png" alt="Icono de ubicación de Tigre y acceso a perfil de Instagram"></a>
-                </div>
-            </article>
-            <article class="mt-5">
-                <h2>¿No hay un capítulo en tu ciudad?</h2>
-                <p>Si estás de acuerdo con los valores de la organización y no hay un capítulo activo en tu ciudad, podés crear uno y ser organizador comunicándote con nosotros a través de un formulario de contacto.</p>
-                <div class="text-center mb-3"><a class="btn btn-dark btn-lg" href="../pages/contacto.html">Formulario de contacto</a></div>
-            </article>
+            </form> 
         </section>
     </main>
+
+
     <footer id="pie" class="container-fluid">
         <div class="row justify-content-center align-items-center py-3">
             <div class="col-lg-3 mb-3">

@@ -60,3 +60,15 @@ body
 .btn-dark {
     @include colores($color-oscuro,$color-fondo);
 }
+.form-control, .form-select{
+    &:focus, &:active, &:checked{
+    @include sombraSeleccion();
+    }
+}
+
+.form-check-input{
+    &:focus, &:active, &:checked{
+    @include sombraSeleccion();
+    @include colores($color-oscuro,$color-tarjeta);
+    }
+}

@@ -100,6 +100,18 @@ body h3 {
   color: #f0f0f5;
 }
 
+.form-control:focus, .form-control:active, .form-control:checked, .form-select:focus, .form-select:active, .form-select:checked {
+  box-shadow: 1px 1px 5px 1px #0f0c0c;
+  border: #0f0c0c;
+}
+
+.form-check-input:focus, .form-check-input:active, .form-check-input:checked {
+  box-shadow: 1px 1px 5px 1px #0f0c0c;
+  border: #0f0c0c;
+  background-color: #0f0c0c;
+  color: #f5f5fa;
+}
+
 footer {
   background-color: #0f0c0c;
   color: #f0f0f5;

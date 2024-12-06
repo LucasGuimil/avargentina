@@ -22,3 +22,7 @@ $fuente-general: 18px;
     background-color: $fondo;
     color: $texto;
 }
+@mixin sombraSeleccion(){
+    box-shadow: 1px 1px 5px 1px $color-oscuro;
+    border: $color-oscuro;
+}
