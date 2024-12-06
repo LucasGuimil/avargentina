@@ -1,18 +1,142 @@
-/* Error: Undefined mixin.
- *    ,
- * 65 |     @include sombraSeleccion();
- *    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   scss\_main.scss 65:5  @import
- *   scss\styles.scss 3:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 65 \2502      @include sombraSeleccion();\d\a    \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\_main.scss 65:5  @import\a   scss\\styles.scss 3:9  root stylesheet";
+@font-face {
+  font-family: "Bebas Neue";
+  src: url(../fonts/bebasNeue.ttf);
+  font-weight: bold;
 }
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+header {
+  background-color: #0f0c0c;
+  color: #f0f0f5;
+  font-size: 28px;
+  font-family: "Bebas Neue";
+}
+header ul {
+  list-style: none;
+}
+header ul a {
+  text-decoration: none;
+  font-size: 28px;
+}
+header ul a:hover, header ul a:active, header ul a:focus {
+  background-color: #f0f0f5;
+  border-radius: 3px;
+}
+header ul a:hover img, header ul a:active img, header ul a:focus img {
+  filter: invert(100%);
+}
+header ul a:hover span, header ul a:active span, header ul a:focus span {
+  color: #0f0c0c;
+}
+header ul a span {
+  color: #f0f0f5;
+}
+
+body {
+  background-color: #f0f0f5;
+  color: #0f0c0c;
+  font-family: "Roboto", "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
+}
+body h1, body h2 {
+  font-family: "Bebas Neue";
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+body h2 {
+  font-size: 28px;
+}
+body h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card {
+  background-color: #f5f5fa;
+  box-shadow: 1px 1px 5px 1px gray;
+  transition: box-shadow, scale;
+  transition-duration: 1s;
+}
+.card:hover, .card:focus {
+  box-shadow: 2px 2px 10px 2px gray;
+  scale: 1.01;
+}
+.card .card-header {
+  background-color: #0f0c0c;
+  color: #f0f0f5;
+}
+.card .card-footer {
+  background-color: #ED2100;
+  color: #f0f0f5;
+}
+.card .card-footer a {
+  text-decoration: none;
+  color: #f0f0f5;
+}
+.card .card-footer a:hover, .card .card-footer a:active, .card .card-footer a:focus {
+  background-color: #f0f0f5;
+  color: #ED2100;
+  border-radius: 3px;
+}
+.card iframe {
+  min-height: 240px;
+  min-width: 300px;
+  aspect-ratio: 16/9;
+  border-style: none;
+}
+
+.icono {
+  transition: scale 0.5s;
+}
+.icono:hover, .icono:active, .icono:focus {
+  scale: 1.05;
+}
+
+.btn-dark {
+  background-color: #0f0c0c;
+  color: #f0f0f5;
+}
+
+.form-control:focus, .form-control:active, .form-control:checked, .form-select:focus, .form-select:active, .form-select:checked {
+  box-shadow: 1px 1px 5px 1px #0f0c0c;
+  border: #0f0c0c;
+}
+
+.form-check-input:focus, .form-check-input:active, .form-check-input:checked {
+  box-shadow: 1px 1px 5px 1px #0f0c0c;
+  border: #0f0c0c;
+  background-color: #0f0c0c;
+  color: #f5f5fa;
+}
+
+footer {
+  background-color: #0f0c0c;
+  color: #f0f0f5;
+  text-align: center;
+}
+footer .tamanoLogo {
+  height: 100px;
+}
+footer .logosFooter div {
+  width: 60px;
+}
+footer .atajo {
+  text-decoration: none;
+  background-color: #0f0c0c;
+  color: #f0f0f5;
+}
+footer .atajo:hover, footer .atajo:active, footer .atajo:focus {
+  filter: invert(100%);
+  border-radius: 3px;
+}
+footer img {
+  transition: scale 0.5s;
+}
+footer img:hover, footer img:active, footer img:focus {
+  scale: 1.2;
+}
+
+/*# sourceMappingURL=styles.css.map */
